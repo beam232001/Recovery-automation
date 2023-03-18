@@ -15,7 +15,7 @@ echo "::group::Device and Kernel Tree Cloning"
 printf "Cloning Device Tree\n"
 git clone $DT_LINK --depth=1 device/${VENDOR}/${CODENAME}
 # omni.dependencies file is a must inside DT, otherwise lunch fails
-[[ ! -f device/${VENDOR}/${CODENAME}/omni.dependencies ]] && printf "[\n]\n" > device/${VENDOR}/${CODENAME}/omni.dependencies
+[[ ! -f device/${VENDOR}/${CODENAME}/aosp.dependencies ]] && printf "[\n]\n" > device/${VENDOR}/${CODENAME}/aosp.dependencies
 
 if [[ ! -z "$KERNEL_LINK" ]]; then
 	printf "Using Manual Kernel Compilation\n"
