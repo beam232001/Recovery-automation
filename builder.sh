@@ -54,7 +54,7 @@ export ALLOW_MISSING_DEPENDENCIES=true
 # and then `source` and `lunch` again
 
 source build/envsetup.sh
-lunch omni_${CODENAME}-$FLAVOR
+lunch aosp_${CODENAME}-$FLAVOR
 echo "::endgroup::"
 
 echo "::group::Compilation"
