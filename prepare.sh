@@ -4,14 +4,14 @@
 export \
 	DEBIAN_FRONTEND=noninteractive \
 	LANG=C.UTF-8 \
-	JAVA_OPTS=" -Xmx7G " JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+	JAVA_OPTS=" -Xmx7G " JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 
 printf "Installing Recommended Programs. This Will Take A Few Minutes...\n"
 sudo apt-get -qqy update &>/dev/null
 sudo apt-get -qqy install --no-install-recommends \
 	lsb-core lsb-security patchutils bc \
 	android-sdk-platform-tools adb fastboot \
-	openjdk-8-jdk ca-certificates-java maven \
+	openjdk-11-jdk ca-certificates-java maven \
 	python-all-dev python-is-python2 \
 	lzip lzop xzdec pixz libzstd-dev lib32z1-dev \
 	exfat-utils exfat-fuse \
